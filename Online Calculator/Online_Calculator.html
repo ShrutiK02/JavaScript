@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="online_calculator.css">
+</head>
+<body>
+    <h1>Online Calculator</h1>
+    <table>
+        <tr>
+            <td colspan="5"><input type="text" id="display" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="clear" value="clear" onclick="clearDisplay()"></td>
+            <td><input type="button" value="=" onclick="calculate()"></td>
+            <td><input type="button" value="(" onclick="appendToDisplay('(')"></td>
+            <td><input type="button" value=")" onclick="appendToDisplay(')')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="*" onclick="appendToDisplay('*')"></td>
+            <td><input type="button" value="/" onclick="appendToDisplay('/')"></td>
+            <td><input type="button" value="+" onclick="appendToDisplay('+')"></td>
+            <td><input type="button" value="-" onclick="appendToDisplay('-')"></td>
+            <td><input type="button" value="." onclick="appendToDisplay('.')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="appendToDisplay('1')"></td>
+            <td><input type="button" value="2" onclick="appendToDisplay('2')"></td>
+            <td><input type="button" value="3" onclick="appendToDisplay('3')"></td>
+            <td><input type="button" value="4" onclick="appendToDisplay('4')"></td>
+            <td><input type="button" value="5" onclick="appendToDisplay('5')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="6" onclick="appendToDisplay('6')"></td>
+            <td><input type="button" value="7" onclick="appendToDisplay('7')"></td>
+            <td><input type="button" value="8" onclick="appendToDisplay('8')"></td>
+            <td><input type="button" value="9" onclick="appendToDisplay('9')"></td>
+            <td><input type="button" value="0" onclick="appendToDisplay('0')"></td>
+        </tr>
+    </table>
+    <script src="online_calculator.js"></script>
+</body>
+</html>
